@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book A Schedule!</title>
+    <script src="exercise4.js"></script>
+    <style>
+      #add-student {
+        background-color:blanchedalmond;
+        margin-top: 50px;
+        visibility: hidden;
+      }
+      input {
+        margin: 5 0 10 0;
+      }
+      
+      input[type='submit'] {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Schedules</h1>
+    <form id="add-schedule">
+      <fieldset>
+        <label for="schedule_id">Schedules: </label>
+        <select id="schedule_id" name="schedule_id"></select>
+        <br>
+        <label for="student_email">Email: </label>
+        <input id="student_email" name="email" type="email">
+        <br>
+        <input type="submit">
+      </fieldset>
+    </form>
+    <form id="add-student">
+      <h2>Add a new student:</h2>
+      <label for="new_student_email">Email: </label>
+      <input id="new_student_email" type="email">
+      <br>
+      <label for="new_student_name">Name: </label>
+      <input id="new_student_name" type="text">
+      <br>
+      <label for="booking_sequence">Booking Sequence: </label>
+      <input id="booking_sequence" type="text">
+      <br>
+      <input type="submit">
+    </form>
+  </div>
+  </body>
+</html>
